@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="segment"
+            type="com.lib.segmentcontrol.SegmentControlAdapter.Segment" />
+
+        <variable
+            name="attributes"
+            type="com.lib.segmentcontrol.SegmentControlAttributes" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="true"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@{segment.label}"
+            android:textColor="@{segment.selected ? attributes.selectedTextColor : attributes.textColor}"
+            android:textSize="@{attributes.textSize}"
+            android:typeface="@{attributes.textTypeface}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:selectedBackgroundColor="@{segment.selected ? attributes.selectedBackgroundColor : @android:color/transparent}"
+            app:selectedCornerRadius="@{attributes.cornerRadius}"
+            tools:text="Segment" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <declare-styleable name="SegmentControlAttributes">
+        <attr name="ss_defaultBackgroundColor" format="color" />
+        <attr name="ss_selectedBackgroundColor" format="color" />
+        <attr name="ss_textColor" format="color" />
+        <attr name="ss_selectedTextColor" format="color" />
+        <attr name="ss_textSize" format="dimension" />
+        <attr name="ss_textTypeface" format="string" />
+        <attr name="ss_strokeWidth" format="integer" />
+        <attr name="ss_strokeColor" format="color" />
+        <attr name="ss_cornerRadius" format="dimension" />
+    </declare-styleable>
+</resources>
